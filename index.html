@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - تفاعل المواقع مع ضغطات المستخدم</title>
+     
+</head>
+<body>
+    <header>
+        <h1>JavaScript: إزاي المواقع بتتفاعل مع ضغطات المستخدم</h1>
+        <p><strong>اسم الطالبة:</strong> فوزية سعيد عبدالرحمن محمود دعس</p>
+        <p><strong>الكود الجامعي:</strong> 2503497</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>المقدمة</h2>
+            <p>
+                من أهم لغات البرمجة المستخدمة في تطوير مواقع الويب، حيث تساعد JavaScript
+                على جعل المواقع تفاعلية وديناميكية بدلاً من أن تكون مجرد صفحات ثابتة.
+                فعندما يضغط المستخدم على زر، أو يكتب نصاً، أو يرسل نموذجاً، تستطيع
+                JavaScript اكتشاف هذا التفاعل وتنفيذ الأوامر المناسبة.
+            </p>
+             
+        </section>
+
+        <section>
+            <h2>أولاً: ما هي JavaScript؟</h2>
+            <p>
+                هي لغة برمجة تُستخدم لإضافة التفاعل إلى صفحات الويب، وتعمل JavaScript
+                مع HTML لبناء عناصر الصفحة، وتساعد CSS على تنسيق شكلها. وتعمل JavaScript
+                على تغيير محتوى الصفحة والاستجابة لأوامر المستخدم دون الحاجة إلى إعادة
+                تحميل الصفحة في كثير من الحالات.
+            </p>
+        </section>
+
+        <section>
+            <h2>ثانياً: كيف تتفاعل المواقع مع ضغطات المستخدم؟</h2>
+            <p>
+                الحدث (Events) هو أي فعل يحدث داخل صفحة الويب، مثل الضغط على زر أو
+                الكتابة في مربع نص. وعندما يقوم المستخدم بحدث معين، يستطيع المتصفح
+                اكتشافه وتشغيل كود برمجي للاستماع إلى هذا الحدث باستخدام الدالة
+                <strong>addEventListener()</strong>. وتُستخدم هذه الدالة للاستجابة للأحداث
+                وتنفيذ التعليمات عند حدوثها.
+            </p>
+        </section>
+
+        <section>
+            <h2>ثالثاً: أهم أنواع الأحداث في JavaScript</h2>
+            <table>
+                <thead>
+                    <tr><th>نوع الحدث</th><th>متى يحدث؟</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Click</strong></td><td>عند الضغط على زر أو عنصر في الصفحة.</td></tr>
+                    <tr><td><strong>Mouseover</strong></td><td>عند تحريك مؤشر الفأرة فوق عنصر.</td></tr>
+                    <tr><td><strong>Keydown</strong></td><td>عند الضغط على أحد أزرار لوحة المفاتيح.</td></tr>
+                    <tr><td><strong>Input</strong></td><td>عند إدخال المستخدم بيانات في مربع نص.</td></tr>
+                    <tr><td><strong>Submit</strong></td><td>عند إرسال نموذج، مثل نموذج تسجيل الدخول.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>رابعاً: مثال عملي على التفاعل مع المستخدم</h2>
+            <p>يمكن إنشاء زر يتفاعل مع المستخدم ويعرض رسالة عند الضغط عليه باستخدام الكود التالي:</p>
+            <div class="demo">
+                <button id="myButton" type="button">اضغط هنا</button>
+                <p id="message" aria-live="polite"></p>
+            </div>
+            <h3>شرح المثال</h3>
+            <ul>
+                <li><strong>button:</strong> نستخدمه للوصول إلى الزر الموجود في الصفحة.</li>
+                <li><strong>addEventListener("click", ...):</strong> تجعل البرنامج يستجيب عند الضغط على الزر.</li>
+                <li><strong>textContent:</strong> تُستخدم لعرض الرسالة داخل الصفحة.</li>
+            </ul>
+            <p>عند الضغط على الزر، تظهر رسالة «مرحباً بك!» للمستخدم.</p>
+        </section>
+
+        <section>
+            <h2>خامساً: أهمية JavaScript في تفاعل المواقع</h2>
+            <p>تساعد JavaScript في تنفيذ العديد من الوظائف، مثل:</p>
+            <ul>
+                <li>إظهار القوائم عند الضغط عليها.</li>
+                <li>التحقق من البيانات التي يدخلها المستخدم.</li>
+                <li>عرض الرسائل والتنبيهات.</li>
+                <li>تحديث محتوى الصفحة بشكل تفاعلي.</li>
+                <li>تحسين تجربة المستخدم وجعل الموقع أسهل في الاستخدام.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>الخاتمة</h2>
+            <p>
+                JavaScript عنصر أساسي في تطوير مواقع الويب التفاعلية. فهي تمكّن الموقع
+                من الاستجابة لضغطات المستخدم وأوامره من خلال الأحداث والدوال البرمجية.
+                ولذلك فإن فهم كيفية التعامل مع الأحداث يُعد خطوة مهمة لكل من يرغب في
+                تعلم تطوير مواقع الويب.
+            </p>
+        </section>
+
+        <section>
+            <h2>المراجع</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events" target="_blank" rel="noopener noreferrer">MDN Web Docs – Introduction to Events</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank" rel="noopener noreferrer">MDN Web Docs – EventTarget: addEventListener()</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>تم إعداد صفحة البحث باستخدام HTML وCSS وJavaScript</footer>
+
+    <script>
+        const button = document.getElementById("myButton");
+        button.addEventListener("click", function () {
+            document.getElementById("message").textContent = "مرحباً بك!";
+        });
+    </script>
+</body>
+</html>
